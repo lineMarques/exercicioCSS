@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+}
+
+.container {
+  background-color: #e1d1b9;
+  border-radius: 3px;
+
+  margin: 3em;
+  padding-bottom: 1.5rem;
+}
+
+/* header */
+.box {
+  background-color: #f5a32fe5;
+  padding: 15px;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  width: 15vh;
+}
+
+.menu a {
+  color: #000;
+  font-family: "Lora", serif;
+  font-size: x-large;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.register a {
+  font-family: "Lora", serif;
+  color: #000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/* section 0*/
+.img {
+  width: 50vw;
+  opacity: 0.9;
+}
+
+.formulario {
+  background-color: #f5a32fe5;
+
+  width: 50vw;
+  margin: 0 0 0 3em;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: clip;
+}
+
+.formulario label {
+  margin: 1em 1em;
+  padding: 15px 15px;
+}
+
+.formulario input {
+  border-radius: 2%;
+  padding: 10px;
+  font: 15px "Lora", sans-serif;
+}
+
+.formulario input:hover {
+  background-color: rgba(255, 255, 255, 0.918);
+}
+
+.btn {
+  border-radius: 5%;
+  padding: 10px;
+  font: 15px "Lora", sans-serif;
+}
+
+.btn:hover {
+  background-color: #ba6c00;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.2s;
+  opacity: 0.7;
+}
+
+/* section 1 */
+.card{
+  border: 3px solid #000;
+  border-radius: 15px;
+  background-color: #ba6c00;
+
+  color: #fff;
+  width: 20%;
+  margin: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.card img{
+   width: 70%;
+   display: flex;
+   margin: 0 auto 0 auto;
+}
+
+.card h3{
+   width: 100%;
+   text-align: center;
+   
+}
+/* footer */
+
+footer {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  cursor: pointer;
+  font-size: small;
+  padding-top: 20px;
+}
+
+#contato svg:hover {
+  transform: scale(1.4);
+  transition: 0.2s;
+  opacity: 0.7;
+}
+
+#contato a {
+  color: #784106;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* gerais */
+.marcaDagua {
+  position: absolute;
+  width: 35em;
+
+  transform: rotate(25deg);
+  opacity: 0.1;
+}
+
+.grid {
+  display: grid;
+}
+.section {
+  display: flex;
+  padding: 3em;
+  overflow: clip;
+}
+p {
+  font-family: "Lora", serif;
+  color: #784106;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+button {
+  padding: 15px 40px;
+  border-radius: 100px;
+}
