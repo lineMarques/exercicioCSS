@@ -1,76 +1,71 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: #000;
 }
 
-.container {
-  background-color: #e1d1b9;
-  border-radius: 3px;
-
-  margin: 3em;
-  padding-bottom: 1.5rem;
-}
-
 /* header */
-.box {
+.container {
   background-color: #f5a32fe5;
+  width: 960px;
   padding: 15px;
-  grid-template-columns: auto auto auto;
-  justify-content: space-evenly;
-  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
 }
 
 .logo {
-  width: 15vh;
+  width: 150px;
+  margin-left: 35px;
+}
+.search{
+  margin-top: 3em;
+  padding: 15.7px;
+  border: none;
+}
+.btnSearch{
+  margin-top:3em;
+  padding: 15.1px;
+  border: none;
+  cursor:pointer
 }
 
 .menu a {
-  color: #000;
-  font-family: "Lora", serif;
   font-size: x-large;
-  padding: 15px;
-  text-decoration: none;
+  margin: 10px;
 }
 
 .register a {
-  font-family: "Lora", serif;
-  color: #000;
-  padding: 5px;
-  text-decoration: none;
+  font-size: small;
+  font-weight: bold;
 }
 
+/* __________________________________________ ----------*/
+[class="container col-12"]{
+  align-items: stretch
+}
 /* section 0*/
-.img {
-  width: 50vw;
-  opacity: 0.9;
+.section0 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .formulario {
   background-color: #f5a32fe5;
-
-  width: 50vw;
-  margin: 0 0 0 3em;
-  padding: 30px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  overflow: clip;
+  padding: 1em;
 }
 
 .formulario label {
-  margin: 1em 1em;
-  padding: 15px 15px;
-}
-
-.formulario input {
-  border-radius: 2%;
-  padding: 10px;
-  font: 15px "Lora", sans-serif;
+  padding: 1em;
 }
 
 .formulario input:hover {
@@ -79,8 +74,9 @@ body {
 
 .btn {
   border-radius: 5%;
-  padding: 10px;
   font: 15px "Lora", sans-serif;
+  width: 10em;
+  padding: 5px;
 }
 
 .btn:hover {
@@ -91,60 +87,81 @@ body {
   opacity: 0.7;
 }
 
+/* ------------------------------------------------------------- */
+.categorias{
+  margin-top:15px ;
+}
 /* section 1 */
-.card{
-  border: 3px solid #000;
-  border-radius: 15px;
-  background-color: #ba6c00;
 
-  color: #fff;
+.displayCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 5em;
+}
+
+.tituloOfertas {
+  margin-top: 4em;
+}
+
+.card {
   width: 20%;
   margin: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+  box-shadow: 5px 5px 37px 17px #c7b59a;
+  border-radius: 3%;
   
 }
-
-.card img{
-   width: 70%;
-   display: flex;
-   margin: 0 auto 0 auto;
+.card p {
+  text-align: center;
+  font-size: medium;
+  padding: 5px;
+}
+.card img {
+  width: 70%;
+  display: flex;
+  margin: 0 auto 0 auto;
 }
 
-.card h3{
-   width: 100%;
-   text-align: center;
-   
+.card h3 {
+  width: 100%;
+  text-align: center;
 }
+/* -------------------------------------------------------------- */
+
 /* footer */
 
 footer {
-  margin: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+
+  padding-top: 30px;
 }
 
 footer p {
-  cursor: pointer;
   font-size: small;
+  text-align: justify;
   padding-top: 20px;
 }
 
-#contato svg:hover {
-  transform: scale(1.4);
-  transition: 0.2s;
-  opacity: 0.7;
-}
-
-#contato a {
-  color: #784106;
-  text-decoration: none;
-  padding: 5px;
-}
+/* ----------------------------------------------------------------- */
 
 /* gerais */
+
+.fundo {
+  background-color: #e1d1b9;
+  border-radius: 0.5%;
+  margin: 6em 3em;
+  padding: 3em;
+}
+
+/*  */ /* 
 .marcaDagua {
   position: absolute;
   width: 35em;
@@ -152,15 +169,13 @@ footer p {
   transform: rotate(25deg);
   opacity: 0.1;
 }
+ */
 
-.grid {
-  display: grid;
+img {
+  width: 100%;
+  border-radius: 1%;
 }
-.section {
-  display: flex;
-  padding: 3em;
-  overflow: clip;
-}
+
 p {
   font-family: "Lora", serif;
   color: #784106;
@@ -168,7 +183,65 @@ p {
   text-align: justify;
 }
 
-button {
-  padding: 15px 40px;
-  border-radius: 100px;
+a {
+  color: #784106;
+  font-family: "Lora", serif;
+  text-decoration: none;
+}
+
+svg:hover{
+  transform: scale(1.4);
+  transition: 0.2s;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* colunas */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+/* clearfix */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
